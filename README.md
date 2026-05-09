@@ -1,7 +1,7 @@
 
 <p><small>Best View in <a href="https://github.com/settings/appearance">Dark Mode</a> (Recommended)</small></p><br/>
 
-<img src="https://socialify.git.ci/tabarakmukhtar/Smart-AI-Resume-Analyzer/image?description=1&font=Bitter&language=1&name=1&pattern=Circuit+Board&stargazers=1&theme=Dark&pattern=Transparent" alt="Smart-AI-Resume-Analyzer" width="1150" />
+<img src="https://via.placeholder.com/1150x400/111111/ffffff?text=Smart+AI+Resume+Analyzer" alt="Smart-AI-Resume-Analyzer" width="1150" />
 
 <div align="center">
 
@@ -17,11 +17,11 @@
 
 | Version | Status | Features | Try Now |
 |---------|--------|----------|---------|
-| **🔹 Version 1.0** <br> *Basic Resume Analyzer* 🏁 | ✅ **Live & Available** | 🔹 **Keyword Extraction** – Identifies key terms in resumes. <br> 🔹 **Structural Analysis** – Evaluates resume formatting & sections. <br> 🔹 **ATS Compatibility Check** – Basic compliance assessment. <br> 🔹 **Resume Insights** – Provides fundamental feedback. | [![Try Version 1.0](https://img.shields.io/badge/Try%20Now-ResumeMind-blue?style=for-the-badge)](https://smart-ai-resume-analyzer.streamlit.app/) |
+| **🔹 Version 1.0** <br> *Basic Resume Analyzer* 🏁 | ✅ **Live & Available** | 🔹 **Keyword Extraction** – Identifies key terms in resumes. <br> 🔹 **Structural Analysis** – Evaluates resume formatting & sections. <br> 🔹 **ATS Compatibility Check** – Basic compliance assessment. <br> 🔹 **Resume Insights** – Provides fundamental feedback. | [![Try Version 1.0](https://img.shields.io/badge/Try%20Now-ResumeMind-blue?style=for-the-badge)](#) |
 
 
 💬 **Join the discussion and share your thoughts, issues, and suggestions here:**  
-🔗 **[🗨️ Feedback & Discussion – Smart AI Resume Analyzer (Version 2.0)](https://github.com/tabarakmukhtar/Smart-AI-Resume-Analyzer/)**  
+🔗 **[🗨️ Feedback & Discussion – Smart AI Resume Analyzer (Version 2.0)](#feedback)**  
 
 ## 📊 **GitHub Stats**
 
@@ -55,11 +55,11 @@
 </table>
 
   <h4>
-    <a href="https://smart-ai-resume-analyzer.streamlit.app/">View Demo</a>
+    <a href="#">View Demo</a>
     <span> · </span>
     <a href="#-setup-in-minutes">Set-Up (Installation)</a>
     <span> · </span>
-    <a href="mailto:mohdtahif0@gmail.com?subject=I%20Want%20The%20Project%20Report%20of%20Smart%20AI%20Resume%20Analyzer&body=Hello%20Team%2C%0D%0A%0D%0AI%20would%20like%20to%20request%20the%20project%20report%20for%20Smart%20AI%20Resume%20Analyzer.%0D%0A%0D%0AName%3A%20%0D%0AOrganization%2FCollege%3A%20%0D%0A%0D%0AThanks.">Project Report</a>
+    <a href="mailto:ziyadahmed0603@gmail.com?subject=Request%20for%20Smart%20AI%20Resume%20Analyzer%20Project%20Report">Project Report</a>
   </h4>
   <p>
     <small align="justify">
@@ -73,15 +73,15 @@
 
 ## 🔗 **Helpful Links**
 
-- [![Streamlit Badge](https://img.shields.io/badge/Live%20Demo-Streamlit-orange?style=for-the-badge&logo=streamlit&logoColor=white)](https://smart-ai-resume-analyzer.streamlit.app/)  
+- [![Streamlit Badge](https://img.shields.io/badge/Live%20Demo-Streamlit-orange?style=for-the-badge&logo=streamlit&logoColor=white)](#)  
 
-- [![Documentation Badge](https://img.shields.io/badge/Documentation-Request-blue?style=for-the-badge&logo=gmail&logoColor=white)](mailto:mohdtahif0@gmail.com?subject=Request%20Documentation%20for%20Smart%20AI%20Resume%20Analyzer&body=Hi%20Team,%0D%0AI%20am%20interested%20in%20learning%20more%20about%20your%20project,%20Smart%20AI%20Resume%20Analyzer.%20Here%20are%20my%20details:%0D%0A%0D%0AName:%0D%0AOrganization/College:%0D%0APurpose%20of%20request:%0D%0A%0D%0AThanks!)  
+- [![Documentation Badge](https://img.shields.io/badge/Documentation-Request-blue?style=for-the-badge&logo=gmail&logoColor=white)](mailto:ziyadahmed0603@gmail.com?subject=Request%20for%20Smart%20AI%20Resume%20Analyzer%20Documentation)  
 
 - [![AI Models Badge](https://img.shields.io/badge/AI%20Models-Documentation-purple?style=for-the-badge&logo=openai&logoColor=white)](AI_MODELS.md)  
 
-- [![Contribution Guide Badge](https://img.shields.io/badge/Contribution%20Guide-Read%20Here-brightgreen?style=for-the-badge&logo=github&logoColor=white)](https://github.com/tabarakmukhtar/Smart-AI-Resume-Analyzer/blob/main/.github/CONTRIBUTING.md)   
+- [![Contribution Guide Badge](https://img.shields.io/badge/Contribution%20Guide-Read%20Here-brightgreen?style=for-the-badge&logo=github&logoColor=white)](#)   
 
-- [![Support Badge](https://img.shields.io/badge/Support%20%26%20Feedback-Discussion-ff69b4?style=for-the-badge&logo=github&logoColor=white)](https://github.com/tabarakmukhtar/Smart-AI-Resume-Analyzer/discussions)  
+- [![Support Badge](https://img.shields.io/badge/Support%20%26%20Feedback-Discussion-ff69b4?style=for-the-badge&logo=github&logoColor=white)](#)  
   
 ## <img src="https://github.com/user-attachments/assets/a6e4d77f-56d6-4aa8-8278-0f5a18ef5eb9" width="24px"> **What Makes Us Different?**  
 
@@ -107,7 +107,7 @@
 Get real-time feedback, boost your resume's impact, and maximize your chances of getting shortlisted—all with a sleek and intuitive interface.  
 
 ## <img src="https://github.com/user-attachments/assets/e5ac1371-6ac4-48b6-b95c-5ef9afaf1353" width="30"> **Live Demo**  
-👨‍💻 Try it Now: [![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://smart-ai-resume-analyzer.streamlit.app/)  
+👨‍💻 Try it Now: [![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](#)  
 
 
 ## <img src="https://github.com/user-attachments/assets/0cefad05-58a9-4aa0-a070-f75a0c9b0353" height="32px">  Tech Stack 
@@ -186,7 +186,7 @@ The **foundation** of Smart AI Resume Analyzer, featuring a custom-built **stand
 - **📌 Basic Resume Insights (No AI)**  
 - **📥 Manual Job Search**  
 
-[![Version 1.0](https://img.shields.io/badge/Version-1.0-blue?style=for-the-badge&logo=python&logoColor=white)](https://smart-ai-resume-analyzer.streamlit.app/)  
+[![Version 1.0](https://img.shields.io/badge/Version-1.0-blue?style=for-the-badge&logo=python&logoColor=white)](#)  
 
 
 #### 🔹 **Version 2.0 - AI-Powered Resume Analyzer** 🤖✨ (Testing Phase) 
@@ -203,7 +203,7 @@ The **next-gen** version, introducing **AI-powered resume analysis** for deeper 
 - **🔎 Advanced Job Search with LinkedIn Scraper** (Customizable Number of Jobs)  
 - **📊 AI-enhanced ATS & Role Matching Algorithm**  
 
-[![Version 2.0](https://img.shields.io/badge/Version-2.0-purple?style=for-the-badge&logo=openai&logoColor=white)](https://smart-ai-resume-analyzer.streamlit.app/)
+[![Version 2.0](https://img.shields.io/badge/Version-2.0-purple?style=for-the-badge&logo=openai&logoColor=white)](#)
 
  ---
  
@@ -224,8 +224,7 @@ Follow the steps below to set up and run the **Smart AI Resume Analyzer** on you
 Open a terminal and run:
 
    ```bash
-   git clone https://github.com/tabarakmukhtar/Smart-AI-Resume-Analyzer
-   cd Smart-AI-Resume-Analyzer
+   cd "Smart-AI-Resume-Analyzer-main"
    ```
 
 2. **2. Create a Virtual Environment**
@@ -437,11 +436,11 @@ Join the mission! Here's how:
 <tr>  
 <td align="center"><b>
    
-   [🏠 HOME](https://smart-ai-resume-analyzer.streamlit.app/)
+   [🏠 HOME](#)
    </b></td>  
 <td align="center"><b>
    
-   [🔍 RESUME ANALYZER(Below Example Analysis of Backend Deeveloper)](https://smart-ai-resume-analyzer.streamlit.app/)
+   [🔍 RESUME ANALYZER(Below Example Analysis of Backend Developer)](#)
 </b></td>  
 </tr>  
 <tr>  
@@ -451,11 +450,11 @@ Join the mission! Here's how:
 <tr>  
 <td align="center"><b>
    
-   [🔍 RESUME ANALYZER(Score And Recommendations)](https://smart-ai-resume-analyzer.streamlit.app/)
+   [🔍 RESUME ANALYZER(Score And Recommendations)](#)
    </b></td>  
 <td align="center"><b>
    
-   [🔍 RESUME ANALYZER(According To Roles Recommendations)](https://smart-ai-resume-analyzer.streamlit.app/)
+   [🔍 RESUME ANALYZER(According To Roles Recommendations)](#)
    </b></td>  
 </tr>  
 <tr>  
@@ -466,11 +465,11 @@ Join the mission! Here's how:
 <tr>  
 <td align="center"><b>
    
-   [🔍 RESUME ANALYZER(According To Roles Course Recommendations)](https://smart-ai-resume-analyzer.streamlit.app/)
+   [🔍 RESUME ANALYZER(According To Roles Course Recommendations)](#)
    </b></td>  
 <td align="center"><b>
    
-   [🔍 RESUME ANALYZER(Videos Recommendations)](https://smart-ai-resume-analyzer.streamlit.app/)
+   [🔍 RESUME ANALYZER(Videos Recommendations)](#)
    </b></td>  
 </tr>  
 <tr>  
@@ -484,7 +483,7 @@ Join the mission! Here's how:
 </b></td>  
 <td align="center"><b>
    
-   [📊 DASHBOARD](https://smart-ai-resume-analyzer.streamlit.app/)
+   [📊 DASHBOARD](#)
 </b></td>  
 </tr>  
 <tr>  
@@ -494,11 +493,11 @@ Join the mission! Here's how:
 <tr>  
 <td align="center"><b>
    
-   [🎯 JOB SEARCH](https://smart-ai-resume-analyzer.streamlit.app/)
+   [🎯 JOB SEARCH](#)
    </b></td>  
 <td align="center"><b>
    
-   [🎯 JOB SEARCH(📊 Job Market Insights & 🏢 Featured Companies)](https://smart-ai-resume-analyzer.streamlit.app/)
+   [🎯 JOB SEARCH(📊 Job Market Insights & 🏢 Featured Companies)](#)
    </b></td>  
 </tr>  
 <tr>  
@@ -508,11 +507,11 @@ Join the mission! Here's how:
 <tr>  
 <td align="center"><b>
    
-   [💬 FEEDBACK](https://smart-ai-resume-analyzer.streamlit.app/)
+   [💬 FEEDBACK](#)
    </b></td>  
 <td align="center"><b>
    
-   [ℹ️ ABOUT](https://smart-ai-resume-analyzer.streamlit.app/)
+   [ℹ️ ABOUT](#)
    </b></td>  
 </tr>  
 <tr>  
@@ -531,11 +530,11 @@ Join the mission! Here's how:
 <tr>  
 <td align="center"><b>  
    
-   [🔍 AI Resume Analysis (Custom Job Description)](https://smart-ai-resume-analyzer.streamlit.app/)
+   [🔍 AI Resume Analysis (Custom Job Description)](#)
    </b></td>  
 <td align="center"><b>  
    
-   [📊 AI Resume Score & Statistics](https://smart-ai-resume-analyzer.streamlit.app/)
+   [📊 AI Resume Score & Statistics](#)
 </b></td>  
 </tr>  
 
@@ -547,11 +546,11 @@ Join the mission! Here's how:
 <tr>  
 <td align="center"><b>  
    
-   [📄 AI-Generated PDF Resume Report](https://smart-ai-resume-analyzer.streamlit.app/)
+   [📄 AI-Generated PDF Resume Report](#)
    </b></td>  
 <td align="center"><b>  
    
-   [📊 AI Resume Analysis Insights](https://smart-ai-resume-analyzer.streamlit.app/)
+   [📊 AI Resume Analysis Insights](#)
    </b></td>  
 </tr>  
 
@@ -563,11 +562,11 @@ Join the mission! Here's how:
 <tr>  
 <td align="center"><b>  
    
-   [🔗 LinkedIn Job Scraper (Search Results)](https://smart-ai-resume-analyzer.streamlit.app/)
+   [🔗 LinkedIn Job Scraper (Search Results)](#)
    </b></td>  
 <td align="center"><b>  
    
-   [🏢 LinkedIn Scraper (Job Listings UI)](https://smart-ai-resume-analyzer.streamlit.app/)
+   [🏢 LinkedIn Scraper (Job Listings UI)](#)
    </b></td>  
 </tr>  
 
@@ -599,12 +598,12 @@ This project is licensed under the [MIT License](https://github.com/tabarakmukht
 
 ## 🌟 **GitHub Repo**  
 
-Explore the code, contribute, or drop a <img src="https://github.com/user-attachments/assets/35f6838c-52f5-4e48-8a98-c5203f8c57e3" style="width:20px; color: #FFD700" alt="Star GIF"> : [Smart Resume AI Repository](https://github.com/tabarakmukhtar/Smart-AI-Resume-Analyzer)  
+Explore the code, contribute, or drop a <img src="https://github.com/user-attachments/assets/35f6838c-52f5-4e48-8a98-c5203f8c57e3" style="width:20px; color: #FFD700" alt="Star GIF"> : [Smart Resume AI Repository](#)  
 
 ## 🛡️ Maintainer  
 
 > **_This repository is maintained by the Smart Resume AI team._**  
-> Have suggestions? Feel free to reach out via [email](mailto:mohdtahif0@gmail.com). 📧
+> Have suggestions? Feel free to reach out via [email](mailto:ziyadahmed0603@gmail.com). 📧
 
 
 ## 📰 News  
@@ -619,7 +618,7 @@ If you appreciate this repository and want to show your support, you can do so t
 
 | ❤️ **Platform**        | 🌟 **Support Link**                                                                                                                                        |
 |------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **GitHub Sponsors**    | [![GitHub Sponsors](https://img.shields.io/badge/GitHub-Sponsor-red?style=flat-square&logo=github)](https://github.com/sponsors/tabarakmukhtar)                  |
-| **Thanks.dev**         | [![Thanks.dev](https://img.shields.io/badge/💜-Thanks.dev-purple?style=flat-square)](https://thanks.dev/tabarakmukhtar)                                          |
+| **GitHub Sponsors**    | [![GitHub Sponsors](https://img.shields.io/badge/GitHub-Sponsor-red?style=flat-square&logo=github)](#)                  |
+| **Thanks.dev**         | [![Thanks.dev](https://img.shields.io/badge/💜-Thanks.dev-purple?style=flat-square)](#)                                          |
 
 **Thank you for your support! Every bit helps keep this repository going.** 🌈✨
