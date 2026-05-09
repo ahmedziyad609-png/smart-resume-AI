@@ -858,231 +858,330 @@ class ResumeApp:
     
     def render_about(self):
         """Render the about page"""
-        # Apply modern styles
         from ui_components import apply_modern_styles
-        import base64
-        import os
-        
-        # Function to load image as base64
-        def get_image_as_base64(file_path):
-            try:
-                with open(file_path, "rb") as image_file:
-                    encoded = base64.b64encode(image_file.read()).decode()
-                    return f"data:image/jpeg;base64,{encoded}"
-            except:
-                return None
-        
-        # Get image path and convert to base64
-        image_path = os.path.join(os.path.dirname(__file__), "assets", "124852522.jpeg")
-        image_base64 = get_image_as_base64(image_path)
-        
         apply_modern_styles()
-        
-        # Add Font Awesome icons and custom CSS
+
         st.markdown("""
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
             <style>
-                .profile-section, .vision-section, .feature-card {
+                .about-hero, .vision-box {
+                    background: rgba(30, 30, 30, 0.95);
+                    border-radius: 24px;
+                    padding: 2.5rem;
+                    margin: 1.5rem auto;
+                    max-width: 1100px;
+                    color: #ddd;
+                }
+
+                .about-hero h1,
+                .vision-box h2 {
+                    margin-bottom: 0.75rem;
+                    color: #fff;
+                }
+
+                .about-hero p,
+                .vision-box p {
+                    color: #c8c8c8;
+                    line-height: 1.75;
+                    font-size: 1rem;
+                }
+
+                .team-header {
                     text-align: center;
-                    padding: 2rem;
-                    background: rgba(45, 45, 45, 0.9);
-                    border-radius: 20px;
-                    margin: 2rem auto;
-                    max-width: 800px;
+                    margin: 3rem auto 1rem auto;
+                    max-width: 1100px;
                 }
-                
-                .profile-image {
-                    width: 200px;
-                    height: 200px;
-                    border-radius: 50%;
-                    margin: 0 auto 1.5rem;
-                    display: block;
-                    object-fit: cover;
-                    border: 4px solid #4CAF50;
-                }
-                
-                .profile-name {
+
+                .team-header h2 {
                     font-size: 2.5rem;
-                    color: white;
+                    color: #fff;
                     margin-bottom: 0.5rem;
                 }
-                
-                .profile-title {
-                    font-size: 1.2rem;
-                    color: #4CAF50;
+
+                .team-header p {
+                    color: #8fd18f;
                     margin-bottom: 1.5rem;
+                    font-size: 1rem;
                 }
-                
-                .social-links {
+
+                .team-stats {
+                    display: flex;
+                    justify-content: center;
+                    gap: 2rem;
+                    flex-wrap: wrap;
+                    margin-top: 1rem;
+                }
+
+                .team-stat {
+                    text-align: center;
+                    min-width: 120px;
+                }
+
+                .team-stat strong {
+                    display: block;
+                    font-size: 1.75rem;
+                    color: #4CAF50;
+                }
+
+                .team-stat span {
+                    color: #ccc;
+                    font-size: 0.85rem;
+                    letter-spacing: 0.08em;
+                }
+
+                .team-cards {
                     display: flex;
                     justify-content: center;
                     gap: 1.5rem;
-                    margin: 2rem 0;
-                }
-                
-                .social-link {
-                    font-size: 2rem;
-                    color: #4CAF50;
-                    transition: all 0.3s ease;
-                    padding: 0.5rem;
-                    border-radius: 50%;
-                    background: rgba(76, 175, 80, 0.1);
-                    width: 60px;
-                    height: 60px;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    text-decoration: none;
-                }
-                
-                .social-link:hover {
-                    transform: translateY(-5px);
-                    background: #4CAF50;
-                    color: white;
-                    box-shadow: 0 5px 15px rgba(76, 175, 80, 0.3);
-                }
-                
-                .bio-text {
-                    color: #ddd;
-                    line-height: 1.8;
-                    font-size: 1.1rem;
-                    margin-top: 2rem;
-                    text-align: left;
-                }
-
-                .vision-text {
-                    color: #ddd;
-                    line-height: 1.8;
-                    font-size: 1.1rem;
-                    font-style: italic;
-                    margin: 1.5rem 0;
-                    text-align: left;
-                }
-
-                .vision-icon {
-                    font-size: 2.5rem;
-                    color: #4CAF50;
-                    margin-bottom: 1rem;
-                }
-
-                .vision-title {
-                    font-size: 2rem;
-                    color: white;
-                    margin-bottom: 1rem;
-                }
-
-                .features-grid {
-                    display: grid;
-                    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-                    gap: 2rem;
-                    margin: 2rem auto;
+                    flex-wrap: wrap;
+                    margin: 2rem auto 3rem auto;
                     max-width: 1200px;
                 }
 
-                .feature-card {
-                    padding: 2rem;
+                .team-card {
+                    background: rgba(25, 25, 25, 0.95);
+                    border: 1px solid rgba(76, 175, 80, 0.15);
+                    border-radius: 24px;
+                    padding: 1.8rem;
+                    width: 100%;
+                    max-width: 360px;
+                    box-shadow: 0 24px 70px rgba(0, 0, 0, 0.15);
+                    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+                }
+
+                .team-card:hover {
+                    transform: translateY(-8px);
+                    border-color: rgba(76, 175, 80, 0.35);
+                    box-shadow: 0 30px 90px rgba(0, 0, 0, 0.22);
+                }
+
+                .team-avatar {
+                    width: 80px;
+                    height: 80px;
+                    border-radius: 50%;
+                    background: linear-gradient(135deg, #4CAF50, #45a049);
+                    margin: 0 auto 1rem auto;
+                    display: grid;
+                    place-items: center;
+                    color: #fff;
+                    font-size: 2rem;
+                }
+
+                .team-name {
+                    color: #fff;
+                    font-size: 1.45rem;
+                    margin: 0.75rem 0 0.25rem 0;
+                    text-align: center;
+                }
+
+                .team-role {
+                    color: #8fd18f;
+                    font-size: 0.9rem;
+                    text-align: center;
+                    margin-bottom: 1.25rem;
+                    text-transform: uppercase;
+                    letter-spacing: 0.08em;
+                }
+
+                .team-card .contact-item {
+                    display: flex;
+                    align-items: center;
+                    gap: 0.6rem;
+                    color: #c8c8c8;
+                    margin-bottom: 0.8rem;
+                    font-size: 0.95rem;
+                }
+
+                .team-card .contact-item i {
+                    color: #4CAF50;
+                    min-width: 18px;
+                }
+
+                .team-card .social-links {
+                    display: flex;
+                    justify-content: center;
+                    gap: 0.8rem;
+                    margin-bottom: 1.2rem;
+                }
+
+                .team-card .social-link {
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 36px;
+                    height: 36px;
+                    border-radius: 50%;
+                    background: rgba(76, 175, 80, 0.12);
+                    color: #4CAF50;
+                    text-decoration: none;
+                    transition: background 0.3s ease, color 0.3s ease;
+                }
+
+                .team-card .social-link:hover {
+                    background: #4CAF50;
+                    color: #fff;
+                }
+
+                .team-card h4 {
+                    color: #fff;
+                    margin-bottom: 0.9rem;
+                    font-size: 1rem;
+                    letter-spacing: 0.02em;
+                }
+
+                .team-card ul {
+                    padding-left: 1.4rem;
+                    color: #c8c8c8;
+                    line-height: 1.7;
                     margin: 0;
                 }
 
-                .feature-icon {
-                    font-size: 2.5rem;
+                .team-card li {
+                    margin-bottom: 0.65rem;
+                }
+
+                .vision-box {
+                    background: rgba(30, 30, 30, 0.95);
+                    border-radius: 24px;
+                    border: 1px solid rgba(76, 175, 80, 0.18);
+                    padding: 2.5rem;
+                    max-width: 1000px;
+                    margin: 0 auto 3rem auto;
+                }
+
+                .vision-box .vision-icon {
                     color: #4CAF50;
+                    font-size: 2.6rem;
                     margin-bottom: 1rem;
                 }
 
-                .feature-title {
-                    font-size: 1.5rem;
-                    color: white;
-                    margin: 1rem 0;
+                .vision-box p {
+                    color: #d0d0d0;
+                    line-height: 1.8;
+                    margin-bottom: 1.5rem;
                 }
 
-                .feature-description {
-                    color: #ddd;
-                    line-height: 1.6;
+                .education-block {
+                    display: flex;
+                    align-items: center;
+                    gap: 1rem;
+                    justify-content: center;
+                    color: #c8c8c8;
+                    flex-wrap: wrap;
+                }
+
+                .education-block i {
+                    color: #4CAF50;
+                    font-size: 2rem;
+                }
+
+                .education-block strong {
+                    color: #fff;
+                    display: block;
+                    margin-bottom: 0.2rem;
+                }
+
+                .education-block span {
+                    display: block;
+                    color: #8fd18f;
+                    font-size: 0.95rem;
                 }
             </style>
         """, unsafe_allow_html=True)
-        
-        # Hero Section
+
         st.markdown("""
-            <div class="hero-section">
-                <h1 class="hero-title">About Smart Resume AI</h1>
-                <p class="hero-subtitle">A powerful AI-driven platform for optimizing your resume</p>
+            <div class="about-hero">
+                <h1>About Smart Resume AI</h1>
+                <p>This project is a collaborative final year BCA solution built by three students to deliver an AI-driven resume analysis experience with a modern, polished user interface.</p>
             </div>
         """, unsafe_allow_html=True)
-        
-        # Profile Section
-        st.markdown(f"""
-            <div class="profile-section">
-                <img src="{image_base64 if image_base64 else 'https://github.com/tabarakmukhtar.png'}" 
-                     alt="Tabarak Mukhtar" 
-                     class="profile-image"
-                     onerror="this.onerror=null; this.src='https://github.com/tabarakmukhtar.png';">
-                <h2 class="profile-name">Tabarak Mukhtar </h2>
-                <p class="profile-title">Full Stack Developer & DevOps Enthusiast</p>
-                <div class="social-links">
-                    <a href="https://github.com/tabarakmukhtar" class="social-link" target="_blank">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/tabarakmukhtar/" class="social-link" target="_blank">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                    <a href="mailto:tabarakmukhtar159@gmail.com" class="social-link" target="_blank">
-                        <i class="fas fa-envelope"></i>
-                    </a>
+
+        st.markdown("""
+            <div class="team-header">
+                <h2>Meet Our Team</h2>
+                <p>Developed as a final year BCA project at Bearys First Grade College</p>
+                <div class="team-stats">
+                    <div class="team-stat"><strong>3</strong><span>Team Members</span></div>
+                    <div class="team-stat"><strong>BCA</strong><span>Final Year Project</span></div>
+                    <div class="team-stat"><strong>AI</strong><span>Powered Solution</span></div>
                 </div>
-                <p class="bio-text">
-                    Hello! I'm a passionate Software Engineer with expertise Full stack Development & DevOps. 
-                    I created Smart Resume AI to revolutionize how job seekers approach their career journey. 
-                    With my background in both software development and AI, I've designed this platform to 
-                    provide intelligent, data-driven insights for resume optimization.
-                </p>
             </div>
         """, unsafe_allow_html=True)
-        
-        # Vision Section
+
+        cols = st.columns(3, gap='large')
+
+        with cols[0]:
+            st.markdown("""
+                <div class="team-card">
+                    <div class="team-avatar"><i class="fas fa-user-tie"></i></div>
+                    <h3 class="team-name">Ahmed Ziyad</h3>
+                    <div class="team-role">Data Science Intern & Developer</div>
+                    <div class="contact-item"><i class="fas fa-phone"></i>7760857911</div>
+                    <div class="contact-item"><i class="fas fa-envelope"></i>ziyadahmed0603@gmail.com</div>
+                    <h4>Key Contributions</h4>
+                    <ul>
+                        <li>MSDC Manipal data science internship</li>
+                        <li>Data cleaning, processing, and visualization</li>
+                        <li>Built machine learning models</li>
+                        <li>Worked with Pandas, NumPy, Power BI</li>
+                    </ul>
+                </div>
+            """, unsafe_allow_html=True)
+
+        with cols[1]:
+            st.markdown("""
+                <div class="team-card">
+                    <div class="team-avatar"><i class="fas fa-robot"></i></div>
+                    <h3 class="team-name">Mohammed Thaeef</h3>
+                    <div class="team-role">AI/ML Developer & Project Lead</div>
+                    <div class="contact-item"><i class="fas fa-phone"></i>+91 7483907355</div>
+                    <div class="contact-item"><i class="fas fa-envelope"></i>mohdtahif0@gmail.com</div>
+                    <div class="contact-item"><i class="fas fa-map-marker-alt"></i>Kundapura, Karnataka</div>
+                    <h4>Key Contributions</h4>
+                    <ul>
+                        <li>Built AI Resume Analyzer with Python and Streamlit</li>
+                        <li>Implemented ATS scoring and keyword optimization</li>
+                        <li>Developed resume builder and dashboard views</li>
+                        <li>Worked with NLP, ML, and data visualization</li>
+                    </ul>
+                </div>
+            """, unsafe_allow_html=True)
+
+        with cols[2]:
+            st.markdown("""
+                <div class="team-card">
+                    <div class="team-avatar"><i class="fas fa-code"></i></div>
+                    <h3 class="team-name">Mohammed Arfath</h3>
+                    <div class="team-role">Full Stack Developer & UI/UX Designer</div>
+                    <div class="contact-item"><i class="fas fa-phone"></i>6364550233</div>
+                    <div class="contact-item"><i class="fas fa-envelope"></i>mohdarfath2005@gmail.com</div>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/mohammed-arfath-69a4b232a" target="_blank" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/mohdarfath2005-bit" target="_blank" class="social-link"><i class="fab fa-github"></i></a>
+                    </div>
+                    <h4>Key Contributions</h4>
+                    <ul>
+                        <li>Designed UI/UX and project flow</li>
+                        <li>Developed backend features with Flask and FastAPI</li>
+                        <li>Built resume templates and interactive pages</li>
+                        <li>Worked with Java, React, Python, and UI design</li>
+                    </ul>
+                </div>
+            """, unsafe_allow_html=True)
+
         st.markdown("""
-            <div class="vision-section">
-                <i class="fas fa-lightbulb vision-icon"></i>
-                <h2 class="vision-title">Our Vision</h2>
-                <p class="vision-text">
-                    "Smart Resume AI represents my vision of democratizing career advancement through technology. 
-                    By combining cutting-edge AI with intuitive design, this platform empowers job seekers at 
-                    every career stage to showcase their true potential and stand out in today's competitive job market."
-                </p>
-            </div>
-        """, unsafe_allow_html=True)
-        
-        # Features Section
-        st.markdown("""
-            <div class="features-grid">
-                <div class="feature-card">
-                    <i class="fas fa-robot feature-icon"></i>
-                    <h3 class="feature-title">AI-Powered Analysis</h3>
-                    <p class="feature-description">
-                        Advanced AI algorithms provide detailed insights and suggestions to optimize your resume for maximum impact.
-                    </p>
+            <div class="vision-box">
+                <div class="vision-icon"><i class="fas fa-lightbulb"></i></div>
+                <h2>Project Vision</h2>
+                <p>Smart Resume AI was developed as our final year BCA project to help students and professionals improve resumes with AI-powered feedback, ATS analysis, and polished resume builder tools.</p>
+                <div class="education-block">
+                    <i class="fas fa-graduation-cap"></i>
+                    <div>
+                        <strong>Bearys First Grade College, Mangalore</strong>
+                        <span>Bachelor of Computer Applications (BCA)</span>
+                        <span>Aug 2023 - May 2026</span>
+                    </div>
                 </div>
-                <div class="feature-card">
-                    <i class="fas fa-chart-line feature-icon"></i>
-                    <h3 class="feature-title">Data-Driven Insights</h3>
-                    <p class="feature-description">
-                        Make informed decisions with our analytics-based recommendations and industry insights.
-                    </p>
-                </div>
-                <div class="feature-card">
-                    <i class="fas fa-shield-alt feature-icon"></i>
-                    <h3 class="feature-title">Privacy First</h3>
-                    <p class="feature-description">
-                        Your data security is our priority. We ensure your information is always protected and private.
-                    </p>
-                </div>
-            </div>
-            <div style="text-align: center; margin: 3rem 0;">
-                <a href="?page=analyzer" class="cta-button">
-                    Start Your Journey
-                    <i class="fas fa-arrow-right" style="margin-left: 10px;"></i>
-                </a>
             </div>
         """, unsafe_allow_html=True)
     

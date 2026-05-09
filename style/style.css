@@ -53,16 +53,155 @@ body {
     letter-spacing: 0.2px;
 }
 
-/* Enhanced text visibility */
+/* Enhanced text visibility - Comprehensive coverage */
 * {
-    text-shadow: 0 0 1px rgba(255, 255, 255, 0.1);
+    color: var(--text-primary) !important;
 }
 
-p, span, div, label {
-    color: var(--text-primary);
-    text-shadow: 0 0 2px rgba(255, 255, 255, 0.1);
+/* Remove potentially problematic text shadows */
+* {
+    text-shadow: none !important;
+}
+
+/* Specific text elements */
+p, span, div, label, h1, h2, h3, h4, h5, h6, a, li, td, th, strong, em, b, i {
+    color: var(--text-primary) !important;
     font-weight: 400;
     line-height: 1.7;
+}
+
+/* Streamlit specific elements */
+.stMarkdown p, .stMarkdown span, .stMarkdown div, .stMarkdown label {
+    color: var(--text-primary) !important;
+}
+
+.stText, .stHeader, .stSubheader, .stTitle {
+    color: var(--text-primary) !important;
+}
+
+.stMarkdown h1, .stMarkdown h2, .stMarkdown h3, .stMarkdown h4, .stMarkdown h5, .stMarkdown h6 {
+    color: var(--text-heading) !important;
+}
+
+/* Button text */
+.stButton > button p, .stButton > button span, .stButton > button div {
+    color: inherit !important;
+}
+
+/* Card content */
+.stCard p, .stCard span, .stCard div, .stCard label {
+    color: var(--text-primary) !important;
+}
+
+/* Sidebar text */
+.css-1d391kg p, .css-1d391kg span, .css-1d391kg div, .css-1d391kg label {
+    color: var(--text-primary) !important;
+}
+
+/* Metric text */
+.stMetric p, .stMetric span, .stMetric div, .stMetric label {
+    color: var(--text-primary) !important;
+}
+
+/* Table text */
+.stTable p, .stTable span, .stTable div, .stTable td, .stTable th {
+    color: var(--text-primary) !important;
+}
+
+/* Alert text */
+.stAlert p, .stAlert span, .stAlert div {
+    color: var(--text-primary) !important;
+}
+
+/* Expander text */
+.stExpander p, .stExpander span, .stExpander div, .stExpander label {
+    color: var(--text-primary) !important;
+}
+
+/* Progress text */
+.stProgress p, .stProgress span, .stProgress div, .stProgress label {
+    color: var(--text-primary) !important;
+}
+
+/* File uploader text */
+.stFileUploader p, .stFileUploader span, .stFileUploader div, .stFileUploader label {
+    color: var(--text-primary) !important;
+}
+
+/* Checkbox and radio text */
+.stCheckbox p, .stCheckbox span, .stCheckbox div, .stCheckbox label {
+    color: var(--text-primary) !important;
+}
+
+/* Additional comprehensive text visibility rules */
+.stMarkdown, .stText, .stHeader, .stSubheader, .stTitle, .stWrite {
+    color: var(--text-primary) !important;
+}
+
+.stMarkdown p, .stMarkdown span, .stMarkdown div, .stMarkdown h1, .stMarkdown h2, .stMarkdown h3, .stMarkdown h4, .stMarkdown h5, .stMarkdown h6 {
+    color: var(--text-primary) !important;
+}
+
+/* Ensure all Streamlit components have visible text */
+.stAlert > div, .stSuccess > div, .stInfo > div, .stWarning > div, .stError > div {
+    color: var(--text-primary) !important;
+}
+
+.stInfo > div p, .stSuccess > div p, .stWarning > div p, .stError > div p {
+    color: var(--text-primary) !important;
+}
+
+/* Dataframe and table text */
+.stDataFrame, .stTable {
+    color: var(--text-primary) !important;
+}
+
+.stDataFrame td, .stDataFrame th, .stTable td, .stTable th {
+    color: var(--text-primary) !important;
+}
+
+/* Plot text */
+.stPlotlyChart, .stPyplot {
+    color: var(--text-primary) !important;
+}
+
+/* Download button text */
+.stDownloadButton > button p, .stDownloadButton > button span {
+    color: inherit !important;
+}
+
+/* Form elements text */
+.stForm p, .stForm span, .stForm div, .stForm label {
+    color: var(--text-primary) !important;
+}
+
+/* Column text */
+.stColumn p, .stColumn span, .stColumn div, .stColumn label {
+    color: var(--text-primary) !important;
+}
+
+/* Container text */
+.stContainer p, .stContainer span, .stContainer div, .stContainer label {
+    color: var(--text-primary) !important;
+}
+
+/* Tab text */
+.stTabs p, .stTabs span, .stTabs div, .stTabs label {
+    color: var(--text-primary) !important;
+}
+
+/* Ensure all text in main content area is visible */
+.main p, .main span, .main div, .main label, .main h1, .main h2, .main h3, .main h4, .main h5, .main h6 {
+    color: var(--text-primary) !important;
+}
+
+/* Force visibility for any remaining elements */
+[data-testid="stMarkdown"], [data-testid="stText"], [data-testid="stHeader"] {
+    color: var(--text-primary) !important;
+}
+
+[data-testid="stMarkdown"] p, [data-testid="stMarkdown"] span, [data-testid="stMarkdown"] div {
+    color: var(--text-primary) !important;
 }
 
 /* Code and monospace text */
@@ -82,8 +221,13 @@ code, pre, .stCodeBlock {
     max-width: 1400px;
     margin: 0 auto;
     background: transparent;
-    color: var(--text-primary);
+    color: var(--text-primary) !important;
     line-height: 1.8;
+}
+
+/* Ensure all content in main is visible */
+.main * {
+    color: var(--text-primary) !important;
 }
 
 /* Global Dark Theme Styles */
@@ -189,10 +333,73 @@ body {
     transition: all 0.3s ease;
 }
 
+.stTextInput > div > div input {
+    color: var(--text-primary) !important;
+    background: transparent !important;
+    border: none !important;
+    outline: none !important;
+    font-size: 14px !important;
+    padding: 12px !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+}
+
+.stTextInput > div > div input::placeholder {
+    color: var(--text-muted) !important;
+}
+
 .stTextInput > div > div:focus-within {
     border-color: var(--neon-cyan);
     box-shadow: 0 0 0 2px rgba(0, 217, 255, 0.2), inset 0 0 10px rgba(0, 217, 255, 0.1);
     background: rgba(26, 26, 46, 0.8);
+}
+
+/* Additional input selectors for different Streamlit versions */
+.stTextInput input,
+.stTextInput textarea,
+.stTextInput [data-baseweb="input"] input,
+.stTextInput [data-baseweb="textarea"] textarea {
+    color: var(--text-primary) !important;
+    background: transparent !important;
+    border: none !important;
+    outline: none !important;
+}
+
+.stTextInput input::placeholder,
+.stTextInput textarea::placeholder,
+.stTextInput [data-baseweb="input"] input::placeholder,
+.stTextInput [data-baseweb="textarea"] textarea::placeholder {
+    color: var(--text-muted) !important;
+}
+
+/* Select Box Styles */
+.stSelectbox > div > div {
+    background: rgba(26, 26, 46, 0.5) !important;
+    border: 1.5px solid rgba(0, 217, 255, 0.3) !important;
+    border-radius: 8px !important;
+    color: var(--text-primary) !important;
+    backdrop-filter: blur(10px) !important;
+    transition: all 0.3s ease !important;
+}
+
+.stSelectbox > div > div:focus-within {
+    border-color: var(--neon-cyan) !important;
+    box-shadow: 0 0 0 2px rgba(0, 217, 255, 0.2), inset 0 0 10px rgba(0, 217, 255, 0.1) !important;
+    background: rgba(26, 26, 46, 0.8) !important;
+}
+
+.stSelectbox [data-baseweb="select"] div {
+    color: var(--text-primary) !important;
+    background: transparent !important;
+}
+
+.stSelectbox [data-baseweb="select"] input {
+    color: var(--text-primary) !important;
+    background: transparent !important;
+}
+
+.stSelectbox [data-baseweb="select"] input::placeholder {
+    color: var(--text-muted) !important;
 }
 
 /* Streamlit Password Input Styles */
@@ -224,6 +431,10 @@ div[data-baseweb="input"] input {
     width: 100% !important;
     box-sizing: border-box !important;
     outline: none !important;
+}
+
+div[data-baseweb="input"] input::placeholder {
+    color: var(--text-muted) !important;
 }
 
 div[data-baseweb="input"]:focus-within {
@@ -698,12 +909,131 @@ h1 {
     to { transform: rotate(360deg); }
 }
 
-/* Resume builder enhancements */
-.template-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1.5rem;
-    padding: 1rem;
+/* Resume builder specific text input and textarea fixes */
+.stTextInput input,
+.stTextInput textarea,
+.stTextArea textarea {
+    color: var(--text-primary) !important;
+    background: transparent !important;
+    border: none !important;
+    outline: none !important;
+    font-size: 14px !important;
+    padding: 12px !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+}
+
+.stTextInput input::placeholder,
+.stTextInput textarea::placeholder,
+.stTextArea textarea::placeholder {
+    color: var(--text-muted) !important;
+    opacity: 0.7 !important;
+}
+
+/* Ensure text areas in resume builder are visible */
+.stTextArea > div > div textarea {
+    color: var(--text-primary) !important;
+    background: rgba(26, 26, 46, 0.5) !important;
+    border: 1.5px solid rgba(0, 217, 255, 0.3) !important;
+    border-radius: 8px !important;
+    padding: 12px !important;
+    font-size: 14px !important;
+    line-height: 1.5 !important;
+    min-height: 100px !important;
+}
+
+.stTextArea > div > div textarea:focus {
+    border-color: var(--neon-cyan) !important;
+    box-shadow: 0 0 0 2px rgba(0, 217, 255, 0.2) !important;
+    background: rgba(26, 26, 46, 0.8) !important;
+}
+
+/* Specific fixes for resume builder text areas */
+.stExpander .stTextArea textarea {
+    color: var(--text-primary) !important;
+    background: rgba(26, 26, 46, 0.5) !important;
+    border: 1px solid rgba(0, 217, 255, 0.3) !important;
+    border-radius: 6px !important;
+}
+
+/* Additional comprehensive input fixes for resume builder */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="url"],
+textarea {
+    color: var(--text-primary) !important;
+    background: rgba(26, 26, 46, 0.5) !important;
+    border: 1.5px solid rgba(0, 217, 255, 0.3) !important;
+    border-radius: 8px !important;
+    padding: 12px !important;
+    font-size: 14px !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+    outline: none !important;
+    transition: all 0.3s ease !important;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="url"]:focus,
+textarea:focus {
+    border-color: var(--neon-cyan) !important;
+    box-shadow: 0 0 0 2px rgba(0, 217, 255, 0.2) !important;
+    background: rgba(26, 26, 46, 0.8) !important;
+}
+
+input[type="text"]::placeholder,
+input[type="email"]::placeholder,
+input[type="tel"]::placeholder,
+input[type="url"]::placeholder,
+textarea::placeholder {
+    color: var(--text-muted) !important;
+    opacity: 0.7 !important;
+}
+
+/* Ultimate fix for resume builder text visibility */
+.stTextInput input,
+.stTextArea textarea,
+.stTextInput [data-baseweb="input"] input,
+.stTextArea [data-baseweb="textarea"] textarea {
+    color: #FFFFFF !important;
+    background: rgba(26, 26, 46, 0.5) !important;
+    border: 1.5px solid rgba(0, 217, 255, 0.3) !important;
+    border-radius: 8px !important;
+    padding: 12px !important;
+    font-size: 14px !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+    outline: none !important;
+    -webkit-text-fill-color: #FFFFFF !important;
+    -webkit-opacity: 1 !important;
+    opacity: 1 !important;
+    caret-color: #FFFFFF !important;
+}
+
+.stTextInput input::placeholder,
+.stTextArea textarea::placeholder,
+.stTextInput [data-baseweb="input"] input::placeholder,
+.stTextArea [data-baseweb="textarea"] textarea::placeholder {
+    color: #B0B4FC !important;
+    opacity: 0.7 !important;
+    -webkit-text-fill-color: #B0B4FC !important;
+}
+
+/* Expander content text visibility */
+.stExpander .stTextInput input,
+.stExpander .stTextArea textarea {
+    color: #FFFFFF !important;
+    background: rgba(26, 26, 46, 0.5) !important;
+    -webkit-text-fill-color: #FFFFFF !important;
+}
+
+.stExpander .stTextInput input::placeholder,
+.stExpander .stTextArea textarea::placeholder {
+    color: #B0B4FC !important;
+    -webkit-text-fill-color: #B0B4FC !important;
 }
 
 .template-card {

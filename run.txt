@@ -1,0 +1,100 @@
+# Smart AI Resume Analyzer - Run Instructions
+
+## Prerequisites
+- Python 3.7 or higher
+- Git (for cloning the repository)
+
+## Step-by-Step Setup and Run Instructions
+
+### 1. Clone the Repository
+```bash
+git clone https://github.com/tabarakmukhtar/Smart-AI-Resume-Analyzer
+cd Smart-AI-Resume-Analyzer
+```
+
+### 2. Create a Virtual Environment
+```bash
+python -m venv venv
+```
+
+### 3. Activate the Virtual Environment
+- **Windows:**
+  ```bash
+  venv\Scripts\activate
+  ```
+- **macOS & Linux:**
+  ```bash
+  source venv/bin/activate
+  ```
+
+### 4. Install Dependencies
+```bash
+pip install -r requirements.txt
+```
+
+### 5. Download spaCy Language Model
+```bash
+python -m spacy download en_core_web_sm
+```
+
+### 6. (Optional) Configure API Keys
+If you want to use AI-powered features (Version 2.0), create a `.env` file in the `utils/` directory:
+```
+GOOGLE_API_KEY=your_google_gemini_api_key
+```
+
+### 7. Run the Application
+```bash
+streamlit run app.py
+```
+
+## Admin Login Credentials
+- **Username:** admin@example.com
+- **Password:** admin123
+
+## Docker Deployment (Alternative)
+### Build Docker Image
+```bash
+docker build -t smart-resume-analyzer .
+```
+
+### Run Docker Container
+```bash
+docker run -p 8501:8501 -e GOOGLE_API_KEY=your_key smart-resume-analyzer
+```
+
+## Required Dependencies (from requirements.txt)
+- streamlit
+- streamlit-option-menu
+- python-docx
+- pandas
+- plotly
+- pillow
+- python-dotenv
+- pdfminer.six
+- nltk
+- scikit-learn
+- sqlalchemy
+- openpyxl
+- streamlit-lottie
+- requests
+- spacy
+- PyPDF2
+- python-dotenv
+
+## Tech Stack
+- **Frontend:** Streamlit, HTML, CSS, JavaScript
+- **Backend:** Python, Streamlit
+- **Database:** SQLite3
+- **AI/ML:** spaCy, scikit-learn, NLTK, Google Gemini (optional)
+
+## Troubleshooting
+- Ensure Python 3.7+ is installed
+- Make sure virtual environment is activated before installing dependencies
+- If spaCy download fails, try running as administrator/sudo
+- Check that all dependencies are installed correctly
+- Ensure port 8501 is available for Streamlit
+
+## Live Demo
+Visit: https://smart-ai-resume-analyzer.streamlit.app/</content>
+<parameter name="filePath">c:\Users\admin\Downloads\Smart-AI-Resume-Analyzer-main (2)\Smart-AI-Resume-Analyzer-main\run.txt
