@@ -59,12 +59,12 @@
     <span> · </span>
     <a href="#-setup-in-minutes">Set-Up (Installation)</a>
     <span> · </span>
-    <a href="mailto:tabarakmukhtar7@gmail.com?subject=I%20Want%20The%20Project%20Report%20of%20Smart%20AI-RESUME-ANALYZER%20(2024%20 %2025)&body=Here%20Are%20My%20Details%20%F0%9F%98%89%0D%0A%0D%0AOrganization%2FCollege%20Name%3A%20%0D%0A%0D%0AFull%20Name%3A%20%0D%0A%0D%0AGitHub%20Profile%20%3A%20%0D%0A%0D%0AFrom%20where%20did%20you%20get%20to%20know%20about%20this%20project%3A%0D%0A%0D%0APurpose%20of%20asking%20project%20report%20(describe)%3A%0D%0A%0D%0A%0D%0AIf%20the%20above%20information%20satisfy%20your%20identity%20you%20will%20get%20the%20report%20to%20your%20email.">Project Report</a>
+    <a href="mailto:mohdtahif0@gmail.com?subject=I%20Want%20The%20Project%20Report%20of%20Smart%20AI%20Resume%20Analyzer&body=Hello%20Team%2C%0D%0A%0D%0AI%20would%20like%20to%20request%20the%20project%20report%20for%20Smart%20AI%20Resume%20Analyzer.%0D%0A%0D%0AName%3A%20%0D%0AOrganization%2FCollege%3A%20%0D%0A%0D%0AThanks.">Project Report</a>
   </h4>
   <p>
     <small align="justify">
       Built with <img src="https://github.com/user-attachments/assets/00314b63-96bb-4e9a-92f6-4ead67e0fb7d" width="25" height="25"> by 
-      <a href="https://www.linkedin.com/in/tabarakmukhtar">Tabarak Mukhtar</a>
+      Ahmed Ziyad, Mohammed Thaeef, and Mohammed Arfath
      </small>
   </p>
 </div><br/><br/>
@@ -75,7 +75,7 @@
 
 - [![Streamlit Badge](https://img.shields.io/badge/Live%20Demo-Streamlit-orange?style=for-the-badge&logo=streamlit&logoColor=white)](https://smart-ai-resume-analyzer.streamlit.app/)  
 
-- [![Documentation Badge](https://img.shields.io/badge/Documentation-Request-blue?style=for-the-badge&logo=gmail&logoColor=white)](mailto:tabarakmukhtar7@gmail.com?subject=Request%20Documentation%20for%20Smart%20AI%20Resume%20Analyzer&body=Hi%20Het%20Patel,%0D%0AI%20am%20interested%20in%20learning%20more%20about%20your%20project,%20Smart%20AI%20Resume%20Analyzer.%20Here%20are%20my%20details:%0D%0A%0D%0AName:%0D%0AOrganization/College:%0D%0APurpose%20of%20request:%0D%0A%0D%0AThanks!)  
+- [![Documentation Badge](https://img.shields.io/badge/Documentation-Request-blue?style=for-the-badge&logo=gmail&logoColor=white)](mailto:mohdtahif0@gmail.com?subject=Request%20Documentation%20for%20Smart%20AI%20Resume%20Analyzer&body=Hi%20Team,%0D%0AI%20am%20interested%20in%20learning%20more%20about%20your%20project,%20Smart%20AI%20Resume%20Analyzer.%20Here%20are%20my%20details:%0D%0A%0D%0AName:%0D%0AOrganization/College:%0D%0APurpose%20of%20request:%0D%0A%0D%0AThanks!)  
 
 - [![AI Models Badge](https://img.shields.io/badge/AI%20Models-Documentation-purple?style=for-the-badge&logo=openai&logoColor=white)](AI_MODELS.md)  
 
@@ -603,8 +603,8 @@ Explore the code, contribute, or drop a <img src="https://github.com/user-attach
 
 ## 🛡️ Maintainer  
 
-> **_This repository is maintained by [Tabarak Mukhtar](https://github.com/tabarakmukhtar)._**  
-> Have suggestions? Feel free to reach out to [me via email](mailto:tabarakmukhtar7@gmail.com). 📧
+> **_This repository is maintained by the Smart Resume AI team._**  
+> Have suggestions? Feel free to reach out via [email](mailto:mohdtahif0@gmail.com). 📧
 
 
 ## 📰 News  
