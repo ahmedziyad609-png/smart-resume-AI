@@ -519,6 +519,18 @@ div[data-baseweb="input"] > div {
     border-color: var(--accent-color);
 }
 
+.stFileUploader label,
+.stFileUploader span,
+.stFileUploader div,
+.stFileUploader p {
+    color: #000000 !important;
+}
+
+.stFileUploader input,
+.stFileUploader button {
+    color: #000000 !important;
+}
+
 /* Metrics */
 .stMetric {
     background: var(--bg-light);
