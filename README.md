@@ -20,9 +20,6 @@
 | **🔹 Version 1.0** <br> *Basic Resume Analyzer* 🏁 | ✅ **Live & Available** | 🔹 **Keyword Extraction** – Identifies key terms in resumes. <br> 🔹 **Structural Analysis** – Evaluates resume formatting & sections. <br> 🔹 **ATS Compatibility Check** – Basic compliance assessment. <br> 🔹 **Resume Insights** – Provides fundamental feedback. | [![Try Version 1.0](https://img.shields.io/badge/Try%20Now-ResumeMind-blue?style=for-the-badge)](#) |
 
 
-💬 **Join the discussion and share your thoughts, issues, and suggestions here:**  
-🔗 **[🗨️ Feedback & Discussion – Smart AI Resume Analyzer (Version 2.0)](#feedback)**  
-
 ## 📊 **GitHub Stats**
 
 <div align="center">
