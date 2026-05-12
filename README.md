@@ -1,7 +1,7 @@
 
 <p><small>Best View in <a href="https://github.com/settings/appearance">Dark Mode</a> (Recommended)</small></p><br/>
 
-<img src="https://via.placeholder.com/1150x400/111111/ffffff?text=Smart+AI+Resume+Analyzer" alt="Smart-AI-Resume-Analyzer" width="1150" />
+<img src="https://via.placeholder.com/1150x400/111111/ffffff?text=" alt="" width="1150" />
 
 <div align="center">
 
